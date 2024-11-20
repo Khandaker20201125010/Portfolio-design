@@ -18,8 +18,8 @@ const Navbar = () => {
         <NavLink
           className={({ isActive }) => {
             return isActive
-              ? "font-bold text-blue-600 hover:text-lime-300"
-              : "font-bold text-black hover:text-blue-600";
+              ? "font-bold text-blue-600 hover:text-blue-600"
+              : "font-semibold text-purple-600 hover:text-blue-600";
           }}
           to="/"
         >
@@ -30,8 +30,8 @@ const Navbar = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "font-bold text-blue-600 hover:text-lime-300"
-              : "font-bold text-black hover:text-blue-600"
+              ? "font-bold text-blue-600 hover:text-blue-600"
+              : "font-bold text-purple-600 hover:text-blue-600"
           }
           to="/projects"
         >
@@ -44,8 +44,8 @@ const Navbar = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "font-bold text-blue-600 hover:text-lime-300"
-              : "font-bold text-black hover:text-blue-600"
+              ? "font-bold text-blue-600 hover:text-blue-600"
+              : "font-bold text-purple-600 hover:text-blue-600"
           }
           to="/experience"
         >
@@ -56,8 +56,8 @@ const Navbar = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "font-bold text-blue-600 hover:text-lime-300"
-              : "font-bold text-black hover:text-blue-600"
+              ? "font-bold text-blue-600 hover:text-blue-600"
+              : "font-bold text-purple-600 hover:text-blue-600"
           }
           to="/Skills"
         >
@@ -69,8 +69,8 @@ const Navbar = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "font-bold text-blue-600 hover:text-lime-300"
-              : "font-bold text-black hover:text-blue-600"
+              ? "font-bold text-blue-600 hover:text-blue-600"
+              : "font-bold text-purple-600 hover:text-blue-600"
           }
           to="/about"
         >
@@ -81,8 +81,8 @@ const Navbar = () => {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "font-bold text-blue-600 hover:text-lime-300"
-              : "font-bold text-black hover:text-blue-600"
+              ? "font-bold text-blue-600 hover:text-blue-600"
+              : "font-bold text-purple-600 hover:text-blue-600"
           }
           to="/contact"
         >
@@ -93,7 +93,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="">
+    <div className="container absolute z-50">
       <div className="navbar bg-transparent">
         <div className="navbar-start fixed z-30 lg:hidden md:hidden">
           <div className="flex  gap-5 lg:gap-10 justify-center items-center">
@@ -159,7 +159,7 @@ const Navbar = () => {
           <a className=" text-2xl ml-10 font-bold">Bhavya Bansal</a>
         </div>
         <div className="flex-none">
-          <ul className="menu menu-horizontal px-1 max-sm:hidden">
+          <ul className="flex gap-7 menu-horizontal px-1 max-sm:hidden">
             {links}
           </ul>
         </div>
